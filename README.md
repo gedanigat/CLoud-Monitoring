@@ -122,6 +122,7 @@ http://52.175.215.82(ELKVM IP):5601
    Nano filebeat-playbook.yml.
 Commands to install and download all the necessary fils are in the YML file as indicated below:
 
+---
 - name: Installing and Launch metricbeat
   hosts: webservers
   become: yes
