@@ -24,7 +24,7 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
-- _A load balancer can add an additional layers of Security and protects a website from hackers and emerging threats. 
+- A load balancer can add an additional layers of Security and protects a website from hackers and emerging threats. 
 - A jump-box is used as a gateway to Virtual Machines, prevents Virtual Machines to expose to the public.By using the network Security group, we can restrict the ip addresses to communicate with the jump-box.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the file system and system metrics.
@@ -45,7 +45,7 @@ The configuration details of each machine may be found below.
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the Jump-Box-Provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+Only the Jump-Box-Provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP address:
 73.158.88.2
 
 Machines within the network can only be accessed by Jump-Box-Provisioner.
@@ -118,7 +118,9 @@ SSH into the control node and follow the steps below:
 http://52.175.215.82(ELKVM IP):5601
 
 -Inorder to create the filbeat-playbook.yml file, use the following command:
+
    Nano filebeat-playbook.yml.
+   
 Commands to install and download all the necessary fils are in the YML file as indicated below:
 
 - name: Installing and Launch metricbeat
