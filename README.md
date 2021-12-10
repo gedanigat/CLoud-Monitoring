@@ -127,7 +127,7 @@ Commands to install and download all the necessary fils are in the YML file as i
   hosts: webservers
   become: yes
   tasks:
-    # Use command module
+    Use command module
   - name: Download metricbeat .deb file
     command: curl -L -O https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-7.4.0-amd64.deb
     # Use command module
