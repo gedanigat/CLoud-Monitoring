@@ -120,5 +120,4 @@ SSH into the control node and follow the steps below:
     
  -Inorder to create the filbeat-playbook.yml file, use the following command:
    Nano filebeat-playbook.yml.
-Commands to install and download all the necessary fils are in the YML file as indicated below:
-![image](https://user-images.githubusercontent.com/95734193/145502700-bed100ef-28ff-426f-8e83-e93ddf84d042.png)
+Commands to install and download all the necessary fils are in the YML file as indicated below:![image](https://user-images.githubusercontent.com/95734193/145502700-bed100ef-28ff-426f-8e83-e93ddf84d042.png)
