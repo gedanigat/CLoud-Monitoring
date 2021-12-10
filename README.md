@@ -117,5 +117,8 @@ SSH into the control node and follow the steps below:
 - How do I specify which machine to install the ELK server on versus which to install Filebeat on? I have two groups on the host file: Web servers which I installed the filebeat to and ELK group in which I added the ELK server IP address and installed Elk to.
 - _Which URL do you navigate to in order to check that the ELK server is running?
     http://52.175.215.82(ELKVM IP):5601
-
+    
+ -Inorder to create the filbeat-playbook.yml file, use the following command:
+   Nano filebeat-playbook.yml.
+Commands to install and download all the necessary fils are in the YML file as indicated below:
 ![image](https://user-images.githubusercontent.com/95734193/145502700-bed100ef-28ff-426f-8e83-e93ddf84d042.png)
