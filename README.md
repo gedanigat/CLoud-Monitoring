@@ -81,7 +81,7 @@ This ELK server is configured to monitor the following machines:
 
 We have installed the following Beats on these machines:
 
-- /Users/honi/CLoud-Monitoring/Diagram/Filebeat Module Status.png
+- https://github.com/gedanigat/CLoud-Monitoring/blob/main/Diagram/Filebeat%20Module%20Status.png
 - /Users/honi/CLoud-Monitoring/Diagram/Metricbeat Module Status.png
 
 These Beats allow us to collect the following information from each machine:
