@@ -118,44 +118,31 @@ SSH into the control node and follow the steps below:
 - _Which URL do you navigate to in order to check that the ELK server is running?
 http://52.175.215.82(ELKVM IP):5601
 
--Inorder to create the filbeat-playbook.yml file, use the following command:
-
-   Nano filebeat-playbook.yml.
-   
-Commands to install and download all the necessary fils are in the YML file as indicated below:
-
-- name: Installing and Launch metricbeat
-  hosts: webservers
-  become: yes
-  tasks:
-    # Use command module
-  - name: Download metricbeat .deb file
-    command: curl -L -O https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-7.4.0-amd64.deb
-    # Use command module
-  - name: Install metricbeat .deb
-    command: dpkg -i metricbeat-7.4.0-amd64.deb
-    # Use copy module
-  - name: Drop in metricbeat.yml
-    copy:
-      src: /etc/ansible/files/metricbeat-config.yml
-      dest: /etc/metricbeat/metricbeat.yml
-    # Use command module
-  - name: Enable and Configure System Module
-    command: metricbeat modules enable docker
-    # Use command module
-  - name: Setup metricbeat
-    command: metricbeat setup
-    # Use command module
-  - name: Start metricbeat service
-    command: service metricbeat start
-    # Use systemd module
-  - name: Enable service metricbeat on boot
-    systemd:
-      name: metricbeat
-      enabled: yes
-
--To run the playbook I used the following command:
-   Ansible-playbook /etc/ansible/roles/filebeat-playbook.yml
--The same procedure works for metricbeat as well.
-
-
+---
+- name: Installing and Launch metricbeat hosts: webservers
+become: yes
+tasks:
+# Use command module
+- name: Download metricbeat .deb file
+command: curl -L -O https://artifacts.elastic.co/downloads/beats/metricbeat/ metricbeat-7.4.0-amd64.deb
+# Use command module
+- name: Install metricbeat .deb
+command: dpkg -i metricbeat-7.4.0-amd64.deb
+# Use copy module
+- name: Drop in metricbeat.yml
+copy:
+src: /etc/ansible/files/metricbeat-config.yml dest: /etc/metricbeat/metricbeat.yml
+# Use command module
+- name: Enable and Configure System Module
+command: metricbeat modules enable docker
+# Use command module - name: Setup metricbeat
+command: metricbeat setup
+# Use command module
+- name: Start metricbeat service
+command: service metricbeat start
+# Use systemd module
+- name: Enable service metricbeat on boot
+systemd:
+name: metricbeat enabled: yes
+-To run the playbook I used the following command: Ansible-playbook /etc/ansible/roles/filebeat-playbook.yml
+-The same procedure works for metr
