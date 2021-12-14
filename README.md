@@ -70,6 +70,7 @@ The playbook implements the following tasks based on the procedures below:
 - First I SSH into the Jump-Box-Provisioner (ssh gedanig@40.76.66.241)
 - Start/Attached to the ansible docker (sudo docker start youthful_lederberg)/(sudo docker attach Youthful_lederberg)
 - Accessed to /etc/ansible/roles directory and created the ELK playbook (Elkinstall.yml)
+
   Elk playbook does: apt install docker, apt install python3-pip, pip install docker module, increases VM memory to 262144, download and launch docker elk container with set of port mapping, enable the docker service on boot.
 - Run the Elkinstall.yml in that same directory
 - Lastly, I SSH into the ELK-VM to verify the server is up and running.The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
