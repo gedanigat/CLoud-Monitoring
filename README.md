@@ -75,6 +75,7 @@ The playbook implements the following tasks based on the procedures below:
 - Ran the Elkinstall.yml in that same directory
 - Lastly, I SSH into the ELK-VM to verify the server is up and running.The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
+https://github.com/gedanigat/CLoud-Monitoring/blob/main/Diagram/elk%20docker-ps.png
 https://github.com/gedanigat/CLoud-Monitoring/blob/main/Diagram/ELK_VM%20Docker-ps.png
 
   Target Machines & Beats
