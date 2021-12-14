@@ -113,7 +113,7 @@ SSH into the control node and follow the steps below:
 - Update the metricbeat-configuration.yml file to include the ELK private IP in lines 62 and 96.
 - Run the playbook, and navigate to http://52.175.215.82(ELKVM IP):5601 to check that the installation worked as expected.
 
- Answer the following questions to fill in the blanks:_
+ Answer the following questions to fill in the blanks:
 - Which file is in the playbook? 
 
 filebeat-playbook.yml
@@ -129,7 +129,8 @@ IP address of the Virtual Machines.
 - How do I specify which machine to install the ELK server on versus which to install Filebeat on? 
 
 I have two groups on the host file: Web servers which I installed the filebeat to and ELK group in which I added the ELK server IP address and installed Elk to.
-- _Which URL do you navigate to in order to check that the ELK server is running?
+- Which URL do you navigate to in order to check that the ELK server is running?
+
     http://52.175.215.82(ELKVM IP):5601
     
  -Inorder to create the filbeat-playbook.yml file, use the following command:
