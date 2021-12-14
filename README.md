@@ -67,7 +67,7 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 - The configuration takes place using YAML Playbooks. It is the best alternative for configuration management/automation.
 
 The playbook implements the following tasks based on the procedures below:
-- First I SSH into the Jump-Box-Provisioner (ssh gedanig@40.76.66.241)
+- First, SSH into the Jump-Box-Provisioner (ssh gedanig@40.76.66.241)
 - Start/Attached to the ansible docker (sudo docker start youthful_lederberg)/(sudo docker attach Youthful_lederberg)
 - Accessed to /etc/ansible/roles directory and created the ELK playbook (Elkinstall.yml)
 
