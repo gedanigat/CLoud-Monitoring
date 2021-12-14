@@ -72,7 +72,7 @@ The playbook implements the following tasks based on the procedures below:
 - Accessed to /etc/ansible/roles directory and created the ELK playbook (Elkinstall.yml)
 
   Elk playbook does: apt install docker, apt install python3-pip, pip install docker module, increases VM memory to 262144, download and launch docker elk container with set of port mapping, enable the docker service on boot.
-- Run the Elkinstall.yml in that same directory
+- Ran the Elkinstall.yml in that same directory
 - Lastly, I SSH into the ELK-VM to verify the server is up and running.The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
 https://github.com/gedanigat/CLoud-Monitoring/blob/main/Diagram/ELK_VM%20Docker-ps.png
