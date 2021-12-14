@@ -25,7 +25,7 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
 - A load balancer can add an additional layers of Security and protects a website from hackers and emerging threats. 
-- A jump-box is used as a gateway to Virtual Machines, prevents Virtual Machines to expose to the public.By using the network Security group, we can restrict the ip addresses to communicate with the jump-box.
+- A jump-box is used as a gateway to Virtual Machines, prevents Virtual Machines exposure to the public.By using the network Security group, we can restrict the ip addresses to communicate with the jump-box.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the file system and system metrics.
 - Filebeat helps generate and organize log files to send to Logstash and Elasticsearch. Specifically, it logs information about the file system, including which files have changed and when.
