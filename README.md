@@ -103,13 +103,13 @@ SSH into the control node and follow the steps below:
 
  Filebeat
 
-- Copy the filebeat-config.yml file to /etc/ansible/roles/files.
+- Copy the filebeat-config.yml file to /etc/ansible/files.
 - Update the filebeat-config.yml file to include the private IP lines in 1106 and 1806.
 - Run the playbook, and navigate to http://52.175.215.82(ELKVM IP):5601 to check that the installation worked as expected.
 
  Metricbeat
 
-- Copy the metricbeat-configuration.yml file to /etc/ansible/roles/files.
+- Copy the metricbeat-configuration.yml file to /etc/ansible/files.
 - Update the metricbeat-configuration.yml file to include the ELK private IP in lines 62 and 96.
 - Run the playbook, and navigate to http://52.175.215.82(ELKVM IP):5601 to check that the installation worked as expected.
 
