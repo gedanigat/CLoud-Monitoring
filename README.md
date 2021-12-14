@@ -46,7 +46,7 @@ The configuration details of each machine may be found below.
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Jump-Box-Provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP address:
-73.158.88.2
+73.158.88.4 (my ip address)
 
 Machines within the network can only be accessed by Jump-Box-Provisioner.
 
