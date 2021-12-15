@@ -133,7 +133,7 @@ I have two groups on the host file: Web servers which I installed the filebeat t
 
     http://52.175.215.82(ELKVM IP):5601
     
- -In order to create the filbeat-playbook.yml file, use the following command:
+ In order to create the filbeat-playbook.yml file, use the following command:
  
    Nano filebeat-playbook.yml.
 Commands to install and download all the necessary fils are in the YML file as indicated below:![image](https://user-images.githubusercontent.com/95734193/145503678-252b4943-4f52-4810-aa7b-02dbc7f5159d.png)
